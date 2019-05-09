@@ -1,0 +1,34 @@
+player,Type,Name,Cost,Trigger,Effect,Description,Modifies,target,flavor,Counter,Counter Reduction,effect possibilities,isStealing,isCoinFlip
+magician,favor,pwetty pwetty pwease,15,,30,ask for 30 gold from audience,gold,audience,pulled gold from their wallet. Thank you!,0,,1,yes,no
+magician,favor,pwease,5,,10,ask for 10 gold from audience,gold,audience,pulled gold from their wallet. Thank you!,0,,1,yes,no
+magician,favor,pwetty pwease,10,,20,ask for 20 gold from audience,gold,audience,pulled gold from their wallet. Thank you!,0,,1,yes,no
+magician,trick,Ta da,5,,20,perform amazing trick recieve 20 gold,gold,self,pulled rabbit from hat,0,,1,no,no
+magician,trick,ta da da ,10,,40,perform amazing trick recieve 40 gold,gold,self,pulled rabbit from hat,0,,1,no,no
+magician,trick,woooooo!,15,,60,perform amazing trick recieve 60 gold,gold,self,pulled rabbit from hat,0,,1,no,no
+magician,trick,flowers,10,,5,perform amazing trick recieve 5 roses,rose,self,pulled rabbit from hat,0,,1,no,no
+magician,trick,pwetty pwetty flowers,30,,15,perform amazing trick recieve 15 roses,rose,self,pulled rabbit from hat,0,,1,no,no
+magician,trick,pwetty flowers,20,,10,perform amazing trick recieve 10 roses,rose,self,pulled rabbit from hat,0,,1,no,no
+audience,aud,Tomatoes,10,,-3,random magician to lose 3 roses,rose,coinflip,,0,,1,no,no
+audience,aud,Large Tomatoes,20,,-6,random magician to lose 6 roses,rose,coinflip,,0,,1,no,no
+audience,aud,Payday!!!,5,,20,Gain 20 gold,gold,self,,0,,1,no,no
+audience,aud,Lottery,10,,40,Gain 40 gold,gold,self,,0,,1,no,no
+audience,aud,Money Tomatoes,10,,-10,target magician to lose 10 gold,gold,magician,,0,,1,no,no
+audience,aud,Large Money Tomatoes,20,,-20,target magician to lose 20 gold,gold,magician,,0,,1,no,no
+audience,aud,Rotten Tomatoes,30,,-8,pick a magician coinflip: heads = lose 8 roses tails = 16 roses,rose,magician,,0,,2,no,yes
+audience,,,,,-16,,rose,magician,,0,,,no,yes
+audience,aud,Giant Tomato,60,,-7,coinflip: heads = magician 1  tails = magician 2 target loses 7 roses due to splash damage,rose,coinflip,,0,,2,no,no
+audience,aud,Prop Shortage,40,,10,Effect: tricks cost 10 extra gold. Presteige: 3 tricks total played,gold,trick,,3,trick,1,no,no
+end,,,,,,,,,,0,,,,
+Magician,Trick,Rabbit in a Hat,10,,10,,rose,self,,0,,,no,no
+Magician,Trick,Banter,0,,0,0,nothing,self,,0,,,no,no
+Magician,sleight,Trump Card,30,yes,10,,rose,magician,,0,,,no,no
+,,,,,5,,rose,self,,0,,,no,no
+,,,,,-5,,rose,magician,,0,,,no,no
+,,,,,,,,,,0,,,no,no
+,,Card name,20,plays 3 or more cards in a turn,1,,,,,,,,no,no
+,,Astonish,30,,-1,,draw,audience,,,,,no,no
+,,Prop Shortage,40,,,,,,,,,,,
+,,Tomatoes,10,,,,,,,,,,,
+,,Rotten tomatoes,30,,,,,,,,,,,
+,,Giant tomatoes,60,,,,,,,,,,,
+,,Egg,20,,,,,,,,,,,
